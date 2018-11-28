@@ -1,0 +1,123 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html, body {
+	font-family: 'Lato', sans-serif;
+	background: white;
+	color: black;
+  text-align: center;
+	margin: 0;
+}
+
+h1 {
+	padding-top: 5%;
+	margin: 0;
+  font-family: 'Lobster', sans-serif;
+  font-weight: lighter;
+
+}
+
+h1 span {
+	background-color: white;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-style:dashed;;
+	border-color: black;
+}
+
+
+.glow {
+  font-size: 3.0em;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #DF514D, 0 0 30px #DF514D, 0 0 40px #DF514D, 0 0 50px #DF514D, 0 0 60px #DF514D, 0 0 70px #DF514D;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #DF514D, 0 0 40px #DF514D, 0 0 50px #DF514D, 0 0 60px #DF514D, 0 0 70px #DF514D, 0 0 80px #DF514D;
+  }
+
+}
+
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+h1 a:hover{
+  text-decoration: none;
+  color: #DF514D;
+}
+
+
+h4 {
+	font-size: 1.5em;
+	padding-top: 2%;
+}
+
+h4 a{
+	text-decoration: none;
+	color: #DF514D;
+}
+
+h4 a:hover{
+	text-decoration: none;
+	color: black;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #DF514D;
+}
+
+
+input[type=text] {
+    width: 30%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('https://img.icons8.com/ios/25/000000/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 80%;
+}
+
+#nav {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  background-color: white;
+}
+
+#nav li{
+  display: inline-block;
+}
+
+#nav li a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: Verdana;
+  padding: 15px;
+}
+
+#nav li a:hover {
+  color: #DF514D;
+}

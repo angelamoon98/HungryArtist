@@ -1,0 +1,91 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html, body {
+	font-family: 'Lato', sans-serif;
+	background: white;
+	color: black;
+  text-align: center;
+	margin: 0;
+}
+
+h1 {
+	padding-top: 5%;
+	margin: 0;
+  font-family: 'Lobster', sans-serif;
+  font-weight: lighter;
+
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+h1 a:hover{
+  text-decoration: none;
+  color: #DF514D;
+}
+
+p {
+  padding: 3%;
+	padding-left: 20%;
+	padding-right: 20%;
+  margin: auto;
+}
+
+.member p {
+	/* padding: 5%; */
+}
+
+h2 {
+	font-size: 2.0em;
+
+}
+h3 {
+	font-size: 1.5em;
+	font-family: 'Lobster', sans-serif;
+	font-weight: lighter;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #DF514D;
+}
+
+.member {
+	padding: 2%;
+}
+.member a{
+	color: #DF514D;
+}
+
+.member img {
+  width: 20%;
+  display:block;
+  margin:auto;
+  border-radius: 50%;
+}
+
+#nav {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  background-color: white;
+}
+
+#nav li{
+  display: inline-block;
+}
+
+#nav li a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: Verdana;
+  padding: 15px;
+}
+
+#nav li a:hover {
+  color: #DF514D;
+}
