@@ -1,6 +1,8 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
+
+
 html, body {
 	font-family: 'Lato', sans-serif;
 	background: white;
@@ -22,6 +24,8 @@ html, body {
 
 .bgtwo {
 	margin: 0;
+	padding: 0;
+
 	background-color: rgba(223, 81, 77, 0.8)
 }
 
@@ -39,8 +43,10 @@ h1 span {
 	padding-right: 3%;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	border-style:dashed;;
+	border-style: dashed;
 	border-color: black;
+	color: #DF514D;
+
 }
 
 h1 a {
@@ -53,21 +59,40 @@ h1 a:hover{
 }
 
 p {
-  padding: 3%;
+  padding-top: 3%;
 	padding-left: 20%;
 	padding-right: 20%;
+	padding-bottom: 4%;
   margin: auto;
 }
 
 h2 {
-	padding-top: 2%;
+	margin: 0;
+	padding-top: 4%;
 	font-size: 2.0em;
-
+	color: black;
+	font-family: 'Lobster', sans-serif;
 }
+
 h3 {
 	font-size: 1.5em;
 	font-family: 'Lobster', sans-serif;
 	font-weight: lighter;
+}
+
+@media screen and (max-width: 480px) {
+    .bgone {
+				background-image: url("images/bgimage1mobile.jpg");
+         height: 350px;
+				 width: 100%;
+				 padding-bottom: 100%;
+    }
+		.bgtwo {
+			padding-bottom: 5%;
+		}
+		h2 {
+			padding-top: 10%;
+		}
 }
 
 .footer a {
@@ -99,22 +124,18 @@ h3 {
   color: #DF514D;
 }
 
-/* Global Button Styles */
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
 	margin: 30px auto 0;
-	padding: 14px 15px;
+	padding: 8px 9px;
 	color: #fff;
-	font-size:14px;
+	font-size: 14px;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-o-transition: all 1s ease;
@@ -135,7 +156,6 @@ a.animated-button:link:after, a.animated-button:visited:after {
 }
 a.animated-button:link:hover, a.animated-button:visited:hover {
 	color: #FFF;
-	text-shadow: none;
 }
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 	height: 450%;
@@ -146,7 +166,7 @@ a.animated-button:link, a.animated-button:visited {
 	margin: 30px auto 0;
 	padding: 14px 15px;
 	color: #fff;
-	font-size:14px;
+	font-size: 14px;
 	border-radius: 0;
 	font-weight: bold;
 	text-align: center;
@@ -154,6 +174,7 @@ a.animated-button:link, a.animated-button:visited {
 	text-transform: uppercase;
 	overflow: hidden;
 	letter-spacing: .08em;
+  z-index: 1;
 	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
@@ -166,12 +187,10 @@ a.animated-button.thar-three {
 	display: block;
 	position: relative;
 	border: 2px solid #DF514D;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
 a.animated-button.thar-three:hover {
-	color: #000 !important;
-	background-color: transparent;
+	color: black !important;
 }
 a.animated-button.thar-three:hover:before {
 	left: 0%;
@@ -189,6 +208,5 @@ a.animated-button.thar-three:before {
 	content: '';
 	color: #000 !important;
 	background: #DF514D;
-	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-0s;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }

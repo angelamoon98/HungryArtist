@@ -21,7 +21,7 @@
     <li><a href="../about/index.html">About</a></li>
     <li><a href="../artist/index.html">Artists</a></li>
     <li><a href="../cafe/index.html">Cafes</a></li>
-    <li><a href="index.html">Search</a></li>
+    <li><a href="index.html">ArtID</a></li>
   </ul>
 
   <h1 class="glow"> Welcome to the HungryArtist Search Bar!</h1>
@@ -33,8 +33,10 @@
 
     </br>
     </br>
-  <form>
-    <input type="text" name="search" placeholder="Enter ArtID...">
+
+
+  <form action="" name="myform" id="myform" method="POST">
+    <input type="text" name="search" id="search" placeholder="Enter ArtID...">
   </form>
 
 
@@ -44,5 +46,28 @@
   <p>&copy; 2018
     <br>Contact: <a href="mailto:angela.moon@duke.edu">angela.moon@duke.edu</a></p>
 </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script>
+ $(function() {
+   $('#myform').submit(function(){
+   var artwork;
+   var artist;
+   var q = $('#search').val();
+
+
+   artwork = q;
+   var ind = q.indexOf("0");
+   artist = q.substring(0, ind);
+   if(!q.includes("0")) {
+     $(this).attr('action', "../artist/" + artwork + ".html");
+   }
+   else {
+    $(this).attr('action', "../artist/" + artist + ".html#" + artwork);
+  }
+  });
+ });
+</script>
 </body>
 </html>

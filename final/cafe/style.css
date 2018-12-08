@@ -103,11 +103,12 @@ h5 a{
 	font-size: 2.0em;
 	text-decoration: none;
 	color: #DF514D;
+	background-color: black;
+	padding: 1%;
 }
 
-
 h5 a:hover{
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -141,4 +142,43 @@ h5 a:hover{
 
 #nav li a:hover {
   color: #DF514D;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/durham3.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	clear: both;
+	padding: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 1%;
+	/* float: left; */
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/seattle.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	clear: both;
+	padding: 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	/* float: right; */
 }
