@@ -107,6 +107,11 @@ h5 a{
 	padding: 1%;
 }
 
+iframe {
+	border:0;
+	width: 80%;
+	height: 20%;
+}
 h5 a:hover{
 	color: white;
 	text-decoration: none;
