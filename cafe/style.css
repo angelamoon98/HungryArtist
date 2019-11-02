@@ -149,6 +149,9 @@ h5 a:hover{
   color: #DF514D;
 }
 
+#nav li.active a{
+    font-weight: bold;
+}
 
 .parallax {
   /* The image used */

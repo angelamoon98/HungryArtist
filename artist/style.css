@@ -164,6 +164,10 @@ h6 span {
   color: #DF514D;
 }
 
+#nav li.active a{
+    font-weight: bold;
+}
+
 .example-image {
 	margin: 2%;
 	width: 350px;
