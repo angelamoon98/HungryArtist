@@ -127,3 +127,7 @@ input[type=text]:focus {
 #nav li a:hover {
   color: #DF514D;
 }
+
+#nav li.active a{
+    font-weight: bold;
+}
